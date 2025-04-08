@@ -1,0 +1,187 @@
+.submit-button:hover {
+  background-color: #0074D9;
+}
+
+/* Center the Quote Page */
+.quote-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Take up full viewport height */
+  text-align: center;
+}
+
+/* Center the Heading */
+.quote-page h1 {
+  font-size: 60px;
+  color: #0052A3;
+  font-family: "Times New Roman", Times, serif !important;
+  margin-bottom: 40px;
+  margin-top: 120px; /* Further increased top margin to bring the heading down */
+}
+
+/* Responsive Media Queries */
+
+/* Extra Small Screens (320px - 374px) */
+@media (max-width: 374px) {
+  .quote-form-container {
+    padding: 30px 20px;
+    max-width: 95%;
+    background-size: 70% auto; /* Adjust for smaller screens */
+  }
+
+  .form-heading {
+    font-size: 24px;
+  }
+
+  .quote-form label {
+    font-size: 14px;
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Small Screens (375px - 424px) */
+@media (min-width: 375px) and (max-width: 424px) {
+  .quote-form-container {
+    padding: 35px 25px;
+    max-width: 85%;
+    background-size: 60% auto; /* Adjust for mid-small screens */
+  }
+
+  .form-heading {
+    font-size: 26px;
+  }
+
+  .quote-form label {
+    font-size: 16px;
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Small Screens (425px - 479px) */
+@media (min-width: 425px) and (max-width: 479px) {
+  .quote-form-container {
+    padding: 35px 25px;
+    max-width: 85%;
+    background-size: 55% auto;
+  }
+
+  .form-heading {
+    font-size: 28px;
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .submit-button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+/* Medium Screens (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .quote-form-container {
+    padding: 35px 25px;
+    max-width: 80%;
+    background-size: 50% auto;
+  }
+
+  .form-heading {
+    font-size: 30px;
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .submit-button {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+}
+
+/* Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .quote-form-container {
+    padding: 50px 40px;
+    max-width: 85%;
+    background-size: 45% auto;
+  }
+
+  .form-heading {
+    font-size: 32px;
+  }
+
+  .submit-button {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+}
+
+/* Laptops (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .quote-form-container {
+    padding: 55px 45px;
+    max-width: 90%;
+    max-height: 100vh;
+    background-size: 40% auto;
+  }
+
+  .form-heading {
+    font-size: 34px;
+  }
+
+  .submit-button {
+    font-size: 22px;
+    padding: 18px 36px;
+  }
+}
+
+/* Desktops (1280px and above) */
+@media (min-width: 1280px) {
+  .quote-form-container {
+    padding: 60px 50px;
+    max-width: 90%;
+    background-size: 35% auto;
+  }
+
+  .form-heading {
+    font-size: 36px;
+  }
+
+  .submit-button {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+}

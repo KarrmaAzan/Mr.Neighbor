@@ -1,0 +1,248 @@
+/* Global Font Application */
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: rgba(0, 82, 163, 0.9);
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: "Times New Roman", Times, serif !important;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.navbar.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Left Section: Hamburger and Title */
+.hamburger-title-container {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between hamburger and title */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.navbar-title {
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Center Section: Logo */
+.navbar-logo {
+  position: absolute;
+  left: 47%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent !important; /* Ensure no background */
+  border: none; /* Remove potential border */
+}
+
+.navbar-logo button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  background-color: #0052a3;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px;
+  width: 180px;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.dropdown-menu li {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.dropdown-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+  background-color: #00a3ff;
+  border-radius: 4px;
+}
+
+/* Extra Small Screens (320px - 479px) */
+@media (max-width: 479px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: rgba(0, 82, 163, 0.9);
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    left: 2px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .navbar-title {
+    font-size: 16px;
+    left: 2rem;
+    opacity: 0%;
+  }
+
+  .dropdown-menu {
+    width: 180px;
+    top: 3.5rem;
+  }
+
+  .hamburger-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between hamburger and title */
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .navbar {
+    padding: 15px;
+    padding-bottom: 25px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-title {
+    font-size: 16px;
+  }
+
+  .dropdown-menu {
+    width: 180px;
+    top: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    left: 2px;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 25px;
+  }
+
+  .dropdown-menu {
+    width: 200px;
+    font-size: 16px;
+    top: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navbar {
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    left: 2px;
+  }
+
+  .navbar-logo img {
+    height: 60px;
+  }
+
+  .navbar-title {
+    font-size: 24px;
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 30px;
+  }
+
+  .dropdown-menu {
+    width: 220px;
+    font-size: 18px;
+    top: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 25px 60px;
+    padding-bottom: 40px;
+    left: 2px;
+  }
+
+  .navbar-logo img {
+    height: 70px;
+  }
+
+  .navbar-title {
+    font-size: 28px;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 35px;
+  }
+
+  .dropdown-menu {
+    width: 250px;
+    font-size: 20px;
+  }
+}
